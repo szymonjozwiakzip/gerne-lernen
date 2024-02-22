@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: bold;
-  background-color: #3a3a3a; 
-  color: #ffffff; 
+  background-color: #3a3a3a;
+  color: #ffffff;
 }
 
 h1 {
@@ -39,8 +39,54 @@ button {
   font-size: 18px; /* wielkość tekstu */
   cursor: pointer; /* zmiana kursora na wskaźnik */
   border-radius: 5px; /* zaokrąglenie rogów */
+  align-items: center;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+label,
+button {
+  display: block; /* każdy label i button będą wyświetlane w osobnej linii */
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#wyswietl {
+  background-color: #b00000;
+}
+
+#wyswietlOdp {
+  background-color: #000000;
+}
+
+button#wyswietl:hover {
+  background-color: #8b0000; /* kolor bordowy po najechaniu */
+}
+
+button#wyswietlOdp:hover {
+  background-color: #121212; /* kolor bordowy po najechaniu */
 }
 
 button:hover {
   background-color: #c48f2a; /* kolor tła przycisku po najechaniu */
+}
+
+.menuKontener {
+  background-color: #222222; /* kolor tła kontenera pytań */
+  border-radius: 5px; /* zaokrąglenie rogów */
+  border: 3px solid #b00000; /* obramowanie */
+  padding: 20px; /* wewnętrzny odstęp */
+  width: 30%; /* szerokość kontenera */
+  margin: auto; /* wyśrodkowanie */
+  text-align: center; /* wyśrodkowanie tekstu */
+  margin-top: 50px; /* margines od góry */
+}
+
+#czas {
+  font-size: 45px;
+  display: block;
+  position: sticky;
+  z-index: 1000;
+  margin-left: 25px;
+  top: 0;
 }

@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>gerne-lernen</title>
-<link rel="stylesheet" href="/style.css">
-<link rel="icon" href="https://cdn.glitch.com/d038b5dd-e2c7-48cf-bf0a-006ec742028c%2Funnamed.png?v=1617027628841">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Shojumaru&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
-</head>  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gerne-lernen</title>
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/d038b5dd-e2c7-48cf-bf0a-006ec742028c%2Funnamed.png?v=1617027628841"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Shojumaru&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
 
-<body>
-<h1>GERNE-LERNEN</h1>
+  <body>
+    <h1>GERNE-LERNEN</h1>
+    <div class="menuKontener">
+      <label for="iloscZadan">Wybierz ilość słów:</label>
+      <input type="number" id="iloscZadan" min="1" max="25" value="10" />
+      <label for="jezyk">Wybierz kierunek tłumaczenia:</label>
+      <select id="jezyk">
+        <option value="polski">Polski &rarr; Niemiecki</option>
+        <option value="niemiecki">Niemiecki &rarr; Polski</option>
+      </select>
+      <button id="wyswietlOdp">Wyświetl Odpowiedzi</button>
+      <button id="wyswietl">Wyświetl czas</button>
+      <button id="wylosuj">Wylosuj słowa</button>
+    </div>
+    <div id="czas">00:00:00</div>
+    <div class="pytaniaKontener animate__animated animate__slideInUp">
+      <div class="pyt">
+        <div id="pytania">
+          <div id="odp">Poprawnie:</div>
+        </div>
+      </div>
+      <div class="spr">
+        <button id="sprawdz">Sprawdź odpowiedzi</button>
 
-  <label for="iloscZadan">Wybierz ilość zadań:</label>
-<input type="number" id="iloscZadan" min="1" max="25" value="10">
-<button id="wylosuj">Wylosuj zadania</button>
-
-  <div class = "pytaniaKontener">
-    <div class = "pyt">
-      
-   
-<div id="pytania"></div>
- </div>
-    <div class= "spr">
-      
-    
-<button id="sprawdz">Sprawdź odpowiedzi</button>
-
-<div id="wynik"></div>
-</div>
-  </div>
-
-</body>
+        <div id="wynik"></div>
+      </div>
+    </div>
+  </body>
 </html>
