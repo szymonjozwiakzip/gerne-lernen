@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const czasDiv = document.getElementById("czas");
   const wyswietlOdpButton = document.getElementById("wyswietlOdp");
   const odpDiv = document.getElementById("odp");
+  const pokazTlumaczaButton = document.getElementById("pokazTlumacza");
+  const tlumaczIframe = document.getElementById("tlumaczIframe");
 
   const buttons = document.querySelectorAll("button");
 
@@ -44,6 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("pytania.json")
     .then((response) => response.json())
     .then((data) => {
+      pokazTlumaczaButton.addEventListener("click", function () {
+        const tlumaczDiv = document.getElementById("tlumacz");
+        if (tlumaczIframe.style.display === "none") {
+          tlumaczIframe.style.display = "block";
+          pokazTlumaczaButton.textContent = "Ukryj Tłumacza";
+        } else {
+          tlumaczIframe.style.display = "none";
+          pokazTlumaczaButton.textContent = "Pokaż Tłumacza";
+        }
+      });
+
       wyswietlOdpButton.addEventListener("click", function () {
         if (odp === 0) {
           wyswietlOdpButton.textContent = "Ukryj odpowiedzi";

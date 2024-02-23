@@ -20,6 +20,15 @@
 
   <body>
     <h1>GERNE-LERNEN</h1>
+    <div id="tlumacz">
+      <a href="/nauka.html"><button id="nauka">Nauka</button></a>
+      <button id="pokazTlumacza">Pokaż Tłumacza</button>
+      <iframe
+        id="tlumaczIframe"
+        src="https://www.diki.pl/slownik-niemieckiego"
+        style="width: 100%; height: 300px; display: none"
+      ></iframe>
+    </div>
     <div class="menuKontener">
       <label for="iloscZadan">Wybierz ilość słów:</label>
       <input type="number" id="iloscZadan" min="1" max="25" value="10" />
