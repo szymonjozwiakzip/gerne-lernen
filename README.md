@@ -1,4 +1,4 @@
-GerneLernen - ucz się jak lubisz
+🇩🇪🇵🇱 GerneLernen - ucz się jak lubisz 🇵🇱🇩🇪
 
 Gerne-Lernen to aplikacja JS do nauki języka niemieckiego. Na stronie głównej znajduje się menu, w którym użytkownik może dostosować styl nauki do swoich indywidualnych potrzeb.
 
