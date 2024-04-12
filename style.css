@@ -13,32 +13,57 @@ h1 {
   font-style: normal;
   font-weight: 400;
   text-align: center;
-  margin-top: 50px; /* margines od góry */
+  margin-top: 50px;
 }
 
 .pytaniaKontener {
-  background-color: #222222; /* kolor tła kontenera pytań */
-  border-radius: 5px; /* zaokrąglenie rogów */
-  border: 3px solid #d4af37; /* obramowanie */
-  padding: 20px; /* wewnętrzny odstęp */
-  width: 30%; /* szerokość kontenera */
-  margin: auto; /* wyśrodkowanie */
-  text-align: center; /* wyśrodkowanie tekstu */
-  margin-top: 50px; /* margines od góry */
+  background-color: #222222;
+  border-radius: 5px;
+  border: 3px solid #d4af37;
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-top: 10px;
+}
+
+input {
+  align-items: center;
+}
+
+#slowka {
+  background-color: #222222;
+  border-radius: 5px;
+  border: 3px solid #d4af37;
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #pytania {
-  margin-bottom: 20px; /* odstęp między pytaniami a przyciskiem */
+  margin-bottom: 20px;
 }
 
 button {
-  background-color: #d4af37; /* kolor tła przycisku */
-  color: #ffffff; /* kolor tekstu na przycisku */
-  border: none; /* brak obramowania */
-  padding: 10px 20px; /* wewnętrzny odstęp */
-  font-size: 18px; /* wielkość tekstu */
-  cursor: pointer; /* zmiana kursora na wskaźnik */
-  border-radius: 5px; /* zaokrąglenie rogów */
+  background-color: #d4af37;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
   align-items: center;
   margin: 0 auto;
   font-weight: 400;
@@ -46,40 +71,71 @@ button {
 
 label,
 button {
-  display: block; /* każdy label i button będą wyświetlane w osobnej linii */
+  display: block;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-
-#wyswietl {
-  background-color: #b00000;
-}
-
-#wyswietlOdp {
+button#nauka,
+#pokazTlumacza,
+#wyswietlOdp,
+#sortAZPL,
+#sortZAPL {
   background-color: #000000;
 }
-
-button#wyswietl:hover {
-  background-color: #8b0000; /* kolor bordowy po najechaniu */
+#powrot {
+  margin-bottom: 40px;
 }
-
-button#wyswietlOdp:hover {
-  background-color: #121212; /* kolor bordowy po najechaniu */
+button#nauka:hover {
+  background-color: #121212;
 }
-
+button#pokazTlumacza:hover,
+#wyswietlOdp:hover,
+#sortAZPL:hover,
+#sortZAPL:hover {
+  background-color: #121212;
+}
+#wyswietl,
+#sortAZGER {
+  background-color: #b00000;
+}
+button#wyswietl:hover,
+#sortAZGER:hover {
+  background-color: #8b0000;
+}
 button:hover {
-  background-color: #c48f2a; /* kolor tła przycisku po najechaniu */
+  background-color: #c48f2a;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#tlumacz {
+  align-items: center;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+}
+#tlumacz iframe {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  border-radius: 7px;
+  border: 3px solid #000000;
 }
 
 .menuKontener {
-  background-color: #222222; /* kolor tła kontenera pytań */
-  border-radius: 5px; /* zaokrąglenie rogów */
-  border: 3px solid #b00000; /* obramowanie */
-  padding: 20px; /* wewnętrzny odstęp */
-  width: 30%; /* szerokość kontenera */
-  margin: auto; /* wyśrodkowanie */
-  text-align: center; /* wyśrodkowanie tekstu */
-  margin-top: 50px; /* margines od góry */
+  background-color: #222222;
+  border-radius: 5px;
+  border: 3px solid #b00000;
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #czas {
@@ -89,4 +145,12 @@ button:hover {
   z-index: 1000;
   margin-left: 25px;
   top: 0;
+}
+
+#flag1,
+#flag2 {
+  width: 25px;
+  height: 25px;
+  border-radius: 60%;
+  padding: 15px 30px;
 }
